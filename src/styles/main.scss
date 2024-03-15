@@ -1,3 +1,23 @@
+@use 'hero';
+
 *{
-    background-color: red;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Roboto, sans-serif;
+    color: #fff;
+}
+
+.container {
+    max-width: 960px;
+    width: 100%;
+    margin:  0 auto;
+
+    @media (max-width:640px){
+        max-width: 80%;
+    }
+    
+    @media screen and (max-width: 1023px) and (min-width:641px) {
+        max-width: 90%;
+    }
 }
