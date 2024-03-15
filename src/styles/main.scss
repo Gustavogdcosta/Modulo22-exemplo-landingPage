@@ -1,4 +1,6 @@
 @use 'hero';
+@use './components/infos_bar';
+@use './components/buttons';
 
 *{
     margin: 0;
@@ -6,6 +8,7 @@
     box-sizing: border-box;
     font-family: Roboto, sans-serif;
     color: #fff;
+    list-style: none;
 }
 
 .container {
@@ -17,7 +20,7 @@
         max-width: 80%;
     }
     
-    @media screen and (max-width: 1023px) and (min-width:641px) {
+    @media screen and (max-width: 1024px) and (min-width:641px) {
         max-width: 90%;
     }
 }

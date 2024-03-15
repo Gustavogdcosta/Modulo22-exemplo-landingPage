@@ -1,0 +1,19 @@
+.button {
+    padding: 12px;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+    white-space: nowrap; // a função wrap quer dizer que um item vai quebrar a linha (como por exemplo no display: flex;  flex-wrap: wrap;) no caso, o nowrap é para não quebrar.
+    // o diplay flex vem com o padrão de nowrap, já o texto vem com padrão wrap
+
+    &--primary {
+        color: #fff;
+        background-color: #4F2AC3;
+    }
+
+    @media (max-width: 640px) {
+        display: block;
+        width: 100%;
+    }
+}
